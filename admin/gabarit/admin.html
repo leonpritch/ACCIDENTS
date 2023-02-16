@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabarit formulaire gestion administrateur</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+
+<body>
+
+    <form action="">
+
+        <label for="login_ut">Identifiant : </label>
+        <input type="text" id="login_ut" required maxlength="16"><span>*</span> <br><br>
+
+        <label for="password_ut">Mots de passe : </label>
+        <input type="password" id="password_ut" required maxlength="32"><span>*</span> <br><br>
+
+        <label for="mail_ut"> Adresse e-mail : </label>
+        <input type="email" id="mail_ut" required maxlength="50"> <span>*</span> <br><br>
+
+        <label for="firstname_ut">Prénom :</label>
+        <input type="text" id="firstname_ut" required maxlength="25"> <span>*</span> <br><br>
+
+        <label for="lastname_ut">Nom :</label>
+        <input type="text" id="lastname_ut" required maxlength="25"> <span>*</span> <br><br>
+
+        <label for="middlename_ut">Surnom :</label>
+        <input type="text" id="middlename_ut" maxlength="25"> <br><br>
+
+        <label for="role_ut">Role : :</label>
+        <select id="role_ut" required>
+            <option value="%UUID%">Administrateur</option>
+            <option value="%UUID%">Rédacteur</option>
+        </select> <span>*</span> <br><br>
+
+        <!-- <label for="role_ut">Role :</label>
+        <input type="radio" id="role_ut" name="radio_role"> Administrateur
+        <input type="radio" id="role_ut" name="radio_role"> Rédacteur <br><br> -->
+
+        <label for="language_ut">Langue :</label>
+        <select id="language_ut" required>
+            <option value="">French</option>
+            <option value="">English</option>
+            <option value="">Spanish</option>
+        </select> <span>*</span> <br><br>
+
+        <label for="avatar_ut">Avatar :</label>
+        <input type="file" id="avatar_ut"> <br><br>
+
+        <!-- <label hidden="hidden" for="uuid">UUID</label> -->
+        <input type="hidden" name="uuid" id="uuid" value="%UUID%"> <br><br>
+
+
+        <span>* Ces champs doivent être obligatoirement saisies</span> <br><br>
+
+        <input type="submit"> <input type="reset">
+
+    </form>
+
+</body>
+
+</html>
